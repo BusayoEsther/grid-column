@@ -1,0 +1,54 @@
+body {
+  background: #1a1c28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+/* Giving each div an AREA NAME and COLOR */
+.orange {
+  background-color: #eb5020;
+  grid-area: orange;
+}
+
+.yellow {
+  background-color: #ffa401;
+  grid-area: yellow;
+}
+
+.green {
+  background-color: #05aa42;
+  grid-area: green;
+}
+
+.blue {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-area: blue;
+}
+
+.blue div {
+  background-color: #01aefd;
+}
+
+.first-sqr {
+  /* width: 200px; */
+  height: 200px;
+}
+
+.second {
+  /* width: 200px; */
+  height: 250px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "orange orange orange yellow yellow"
+    "green green blue blue blue";
+  gap: 1rem;
+  width: 700px;
+  /* padding: 10px; */
+}
